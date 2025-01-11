@@ -1,0 +1,40 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoesDesktopMauiApp.Views.ItemsPage"
+             x:Name="PageRoot"
+             Title="Items">
+    <StackLayout Padding="20">
+        <ListView
+            ItemsSource="{Binding Items}"
+            IsPullToRefreshEnabled="True"
+            RefreshCommand="{Binding LoadItemsCommand}"
+            IsRefreshing="{Binding IsBusy}"
+            Margin="0,10,0,10"
+            ItemTapped="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" />
+                            <Label Text="{Binding Description}" FontSize="14" TextColor="Gray" />
+                            <Button
+                                Text="Delete"
+                                Command="{Binding Path=BindingContext.RemoveItemCommand, Source={x:Reference PageRoot}}"
+                                CommandParameter="{Binding Id}"
+                                BackgroundColor="Red"
+                                TextColor="White"
+                                HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button
+            Text="Add New Item"
+            Command="{Binding NavigateToAddItemCommand}"
+            BackgroundColor="#0078D4"
+            TextColor="White"
+            Margin="0,10" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,84 @@
+is_global = true
+build_property.RefitInternalNamespace = ShoesDesktopMauiApp
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShoesDesktopMauiApp
+build_property.ProjectDir = C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/AddItemPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.AddItemPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddItemPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddItemPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/ItemDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.ItemDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemDetailsPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/ItemsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.ItemsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemsPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/RatingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.RatingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RatingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RatingPage.xaml
+
+[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/RegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.RegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegistrationPage.xaml
