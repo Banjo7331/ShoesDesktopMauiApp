@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-11T22:46:55.960</Modified>
+      <Modified>2025-01-12T15:00:52.925</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-11T21:05:28.559</Modified>
+      <Modified>2025-01-12T13:20:35.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ShoesDesktopMauiApp.runtimeconfig.json">
       <PackagePath>ShoesDesktopMauiApp.runtimeconfig.json</PackagePath>
-      <Modified>2025-01-11T00:16:55.205</Modified>
+      <Modified>2025-01-12T13:20:35.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ShoesDesktopMauiApp.dll">
       <PackagePath>ShoesDesktopMauiApp.dll</PackagePath>
-      <Modified>2025-01-11T22:46:55.180</Modified>
+      <Modified>2025-01-12T15:00:52.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ShoesDesktopMauiApp.exe</PackagePath>
-      <Modified>2025-01-11T22:46:55.203</Modified>
+      <Modified>2025-01-12T15:00:52.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:28.808</Modified>
+      <Modified>2025-01-12T13:20:30.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:28.822</Modified>
+      <Modified>2025-01-12T13:20:30.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:28.847</Modified>
+      <Modified>2025-01-12T13:20:30.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:28.886</Modified>
+      <Modified>2025-01-12T13:20:30.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:29.027</Modified>
+      <Modified>2025-01-12T13:20:31.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -83,211 +83,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.194</Modified>
+      <Modified>2025-01-12T13:20:33.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.194</Modified>
+      <Modified>2025-01-12T13:20:33.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.193</Modified>
+      <Modified>2025-01-12T13:20:33.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.193</Modified>
+      <Modified>2025-01-12T13:20:33.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.193</Modified>
+      <Modified>2025-01-12T13:20:33.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.198</Modified>
+      <Modified>2025-01-12T13:20:33.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.198</Modified>
+      <Modified>2025-01-12T13:20:33.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.198</Modified>
+      <Modified>2025-01-12T13:20:33.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.198</Modified>
+      <Modified>2025-01-12T13:20:33.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.198</Modified>
+      <Modified>2025-01-12T13:20:33.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.199</Modified>
+      <Modified>2025-01-12T13:20:33.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.199</Modified>
+      <Modified>2025-01-12T13:20:33.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.199</Modified>
+      <Modified>2025-01-12T13:20:33.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.199</Modified>
+      <Modified>2025-01-12T13:20:33.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.199</Modified>
+      <Modified>2025-01-12T13:20:33.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.200</Modified>
+      <Modified>2025-01-12T13:20:33.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.196</Modified>
+      <Modified>2025-01-12T13:20:33.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.197</Modified>
+      <Modified>2025-01-12T13:20:33.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.197</Modified>
+      <Modified>2025-01-12T13:20:33.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.197</Modified>
+      <Modified>2025-01-12T13:20:33.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.197</Modified>
+      <Modified>2025-01-12T13:20:33.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.197</Modified>
+      <Modified>2025-01-12T13:20:33.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.195</Modified>
+      <Modified>2025-01-12T13:20:33.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.194</Modified>
+      <Modified>2025-01-12T13:20:33.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.194</Modified>
+      <Modified>2025-01-12T13:20:33.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.202</Modified>
+      <Modified>2025-01-12T13:20:33.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.202</Modified>
+      <Modified>2025-01-12T13:20:33.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.202</Modified>
+      <Modified>2025-01-12T13:20:33.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.202</Modified>
+      <Modified>2025-01-12T13:20:33.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-01-11T00:09:31.201</Modified>
+      <Modified>2025-01-12T13:20:33.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ShoesDesktopMauiApp.deps.json">
       <PackagePath>ShoesDesktopMauiApp.deps.json</PackagePath>
-      <Modified>2025-01-11T21:05:27.930</Modified>
+      <Modified>2025-01-12T13:20:35.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.53\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -356,6 +356,22 @@
     <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
       <Modified>2024-03-11T15:36:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.identitymodel.abstractions\8.3.0\lib\net8.0\Microsoft.IdentityModel.Abstractions.dll">
+      <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
+      <Modified>2024-12-04T18:04:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.identitymodel.jsonwebtokens\8.3.0\lib\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+      <Modified>2024-12-04T18:05:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.identitymodel.logging\8.3.0\lib\net8.0\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Microsoft.IdentityModel.Logging.dll</PackagePath>
+      <Modified>2024-12-04T18:04:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.identitymodel.tokens\8.3.0\lib\net8.0\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Microsoft.IdentityModel.Tokens.dll</PackagePath>
+      <Modified>2024-12-04T18:04:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.io.recyclablememorystream\3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll">
       <PackagePath>Microsoft.IO.RecyclableMemoryStream.dll</PackagePath>
@@ -452,6 +468,10 @@
     <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\refit\8.0.0\lib\net8.0\Refit.dll">
       <PackagePath>Refit.dll</PackagePath>
       <Modified>2024-11-03T14:14:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\system.identitymodel.tokens.jwt\8.3.0\lib\net8.0\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+      <Modified>2024-12-04T18:04:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\.nuget\packages\microsoft.maui.controls.core\8.0.83\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

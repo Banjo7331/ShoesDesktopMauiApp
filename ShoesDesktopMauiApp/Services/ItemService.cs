@@ -78,7 +78,20 @@ public class ItemService : IItemService
 
     public async Task RemoveItemAsync(Guid id)
     {
-        var response = await _httpClient.DeleteAsync($"api/item/{id}");
-        response.EnsureSuccessStatusCode();
+        try
+        {
+            var response = await _httpClient.DeleteAsync($"api/item/{id}");
+
+            response.EnsureSuccessStatusCode(); 
+        }
+        catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Forbidden)
+        {
+            throw new Exception("You are not authorized to delete this item.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in RemoveItemAsync: {ex.Message}");
+            throw; 
+        }
     }
 }

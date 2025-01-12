@@ -71,12 +71,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
-[C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/RatingPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.RatingPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\RatingPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\RatingPage.xaml
-
 [C:/Users/cylwi/RiderProjects/ShoesDesktopMauiApp/ShoesDesktopMauiApp/Views/RegistrationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShoesDesktopMauiApp.Views.RegistrationPage.xaml

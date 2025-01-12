@@ -1,4 +1,6 @@
-﻿namespace ShoesDesktopMauiApp.Models.Ratings;
+﻿using System.Collections.Generic;
+
+namespace ShoesDesktopMauiApp.Models.Ratings;
 
 public class GetRatingListResponse
 {

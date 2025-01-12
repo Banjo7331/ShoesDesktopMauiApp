@@ -17,18 +17,26 @@ namespace ShoesDesktopMauiApp.ViewModels
     public class ItemsViewModel : BindableObject
     {
         private readonly IItemService _itemService;
+        private readonly IRatingService _ratingService;
         private readonly IServiceProvider _serviceProvider;
         private bool _isBusy;
+        public string CurrentUser { get; private set; }
         public ICommand NavigateToAddItemCommand { get; }
         public ICommand NavigateToItemDetailsCommand { get; }
         public ObservableCollection<Item> Items { get; } = new ObservableCollection<Item>();
 
-        public ItemsViewModel(IItemService itemService, IServiceProvider serviceProvider)
+        public ItemsViewModel(IItemService itemService,IRatingService ratingService,TokenService tokenService,IServiceProvider serviceProvider)
         {
             _itemService = itemService;
             _serviceProvider = serviceProvider;
+            _ratingService = ratingService;
 
-            // Komendy
+            var token = SecureStorage.GetAsync("auth_token").Result;
+            if (!string.IsNullOrEmpty(token))
+            {
+                CurrentUser = tokenService.GetUsernameFromToken(token);
+            }
+            
             LoadItemsCommand = new Command(async () => await LoadItemsAsync());
             AddItemCommand = new Command(async () => await AddItemAsync());
             RemoveItemCommand = new Command<Guid>(async (id) => await RemoveItemAsync(id));
@@ -129,6 +137,7 @@ namespace ShoesDesktopMauiApp.ViewModels
             try
             {
                 await _itemService.RemoveItemAsync(id);
+
                 var itemToRemove = Items.FirstOrDefault(i => i.Id == id);
                 if (itemToRemove != null)
                 {
@@ -137,7 +146,14 @@ namespace ShoesDesktopMauiApp.ViewModels
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                if (ex.Message.Contains("You are not authorized"))
+                {
+                    await Application.Current.MainPage.DisplayAlert("Unauthorized", ex.Message, "OK");
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "An error occurred while removing the item. Please try again.", "OK");
+                }
             }
         }
         
@@ -146,10 +162,11 @@ namespace ShoesDesktopMauiApp.ViewModels
             if (selectedItem == null)
                 return;
 
-            // Nawigacja do ItemDetailsPage z przekazaniem ID
-            await Application.Current.MainPage.Navigation.PushAsync(new ItemDetailsPage(
-                new ItemDetailsViewModel(_itemService, selectedItem.Id)
-            ));
+            var viewModel = _serviceProvider.GetRequiredService<ItemDetailsViewModel>();
+
+            viewModel.Initialize(selectedItem.Id);
+
+            await Application.Current.MainPage.Navigation.PushAsync(new ItemDetailsPage(viewModel));
         }
         private async Task NavigateToAddItemAsync()
         {

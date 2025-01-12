@@ -1,4 +1,6 @@
-﻿namespace ShoesDesktopMauiApp.Models;
+﻿using System;
+
+namespace ShoesDesktopMauiApp.Models;
 
 public class Rating
 {

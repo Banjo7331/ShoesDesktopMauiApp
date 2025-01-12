@@ -88,10 +88,9 @@ namespace ShoesDesktopMauiApp.ViewModels;
 
                 await SecureStorage.SetAsync("auth_token", response.token);
 
-                // Przejdź do głównej strony
-                await Application.Current.MainPage.DisplayAlert("Success", "Login successful!", "OK");
                 var itemsPage = _serviceProvider.GetRequiredService<ItemsPage>();
-                await Application.Current.MainPage.Navigation.PushAsync(itemsPage);
+                Application.Current.MainPage = new NavigationPage(itemsPage);
+                await Application.Current.MainPage.DisplayAlert("Success", "Login successful!", "OK");
             }
             catch (Exception ex)
             {

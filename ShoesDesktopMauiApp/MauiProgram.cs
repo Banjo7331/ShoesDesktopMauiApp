@@ -23,15 +23,16 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
         builder.Services.AddTransient<DynamicAuthorizationHandler>();
+        builder.Services.AddSingleton<TokenService>();
         
         builder.Services.AddTransient<ItemsViewModel>();
         builder.Services.AddTransient<ItemsPage>();
         
+        builder.Services.AddTransient<ItemDetailsViewModel>();
+        builder.Services.AddTransient<ItemDetailsPage>();
+        
         builder.Services.AddTransient<AddItemViewModel>();
         builder.Services.AddTransient<AddItemPage>();
-        
-        builder.Services.AddTransient<RatingsViewModel>();
-        builder.Services.AddTransient<RatingPage>();
         
         builder.Services.AddTransient<LoginViewModel>();
         builder.Services.AddTransient<LoginPage>();

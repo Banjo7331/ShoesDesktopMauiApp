@@ -17,26 +17,24 @@ public class RatingService : IRatingService
         _httpClient = httpClient;
     }
 
-    /// <summary>
-    /// Tworzy nową ocenę dla elementu.
-    /// </summary>
     public async Task CreateRatingAsync(Guid itemId, CreateRatingRequest request)
     {
         try
         {
             var response = await _httpClient.PostAsJsonAsync($"api/item/{itemId}/ratings", request);
+
             response.EnsureSuccessStatusCode();
+        }
+        catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.BadRequest)
+        {
+            throw new Exception("You have already rated this item.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error creating rating: {ex.Message}");
-            throw;
+            Console.WriteLine($"Error in CreateRatingAsync: {ex.Message}");
         }
     }
 
-    /// <summary>
-    /// Usuwa ocenę przypisaną do elementu.
-    /// </summary>
     public async Task RemoveRatingAsync(Guid itemId)
     {
         try
@@ -51,9 +49,6 @@ public class RatingService : IRatingService
         }
     }
 
-    /// <summary>
-    /// Pobiera listę ocen dla elementu.
-    /// </summary>
     public async Task<GetRatingListResponse> GetRatingListAsync(Guid itemId)
     {
         try
@@ -61,7 +56,6 @@ public class RatingService : IRatingService
             var response = await _httpClient.GetAsync($"api/item/{itemId}/ratings");
             response.EnsureSuccessStatusCode();
 
-            // Deserializacja odpowiedzi na obiekt GetRatingListResponse
             return await response.Content.ReadFromJsonAsync<GetRatingListResponse>();
         }
         catch (Exception ex)

@@ -101,10 +101,8 @@ namespace ShoesDesktopMauiApp.ViewModels;
 
                 var response = await _userService.RegisterAsync(request);
 
-                // Show success message
                 await Application.Current.MainPage.DisplayAlert("Success", "Registration successful! Please log in.", "OK");
 
-                // Navigate back to login page
                 await Application.Current.MainPage.Navigation.PopAsync();
             }
             catch (Exception ex)
