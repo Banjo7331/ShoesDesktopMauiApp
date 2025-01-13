@@ -19,24 +19,22 @@ public class ItemService : IItemService
         _httpClient = httpClient;
     }
 
-    public async Task<List<Item>> GetItemsAsync()
+    public async Task<PagedItemResponse> GetItemsAsync(int pageNumber, int pageSize)
     {
         try
         {
-            var response = await _httpClient.GetAsync("api/item");
+            var response = await _httpClient.GetAsync($"api/item?pageNumber={pageNumber}&pageSize={pageSize}");
             response.EnsureSuccessStatusCode();
 
-            // Deserializacja odpowiedzi jako PagedItemResponse
             var jsonResponse = await response.Content.ReadAsStringAsync();
-            Console.WriteLine("Response JSON: " + jsonResponse); // Debug
+            Console.WriteLine("Response JSON: " + jsonResponse);
 
             var pagedResponse = JsonSerializer.Deserialize<PagedItemResponse>(jsonResponse, new JsonSerializerOptions
             {
-                PropertyNameCaseInsensitive = true // Ignorowanie wielkości liter w nazwach pól
+                PropertyNameCaseInsensitive = true
             });
 
-            // Zwrócenie listy elementów
-            return pagedResponse?.Items ?? new List<Item>();
+            return pagedResponse ?? new PagedItemResponse();
         }
         catch (Exception ex)
         {
@@ -52,7 +50,6 @@ public class ItemService : IItemService
             var response = await _httpClient.GetAsync($"api/item/{id}");
             response.EnsureSuccessStatusCode();
 
-            // Deserializacja odpowiedzi JSON do modelu ItemDetails
             return await response.Content.ReadFromJsonAsync<ItemDetails>();
         }
         catch (Exception ex)
@@ -72,7 +69,7 @@ public class ItemService : IItemService
         catch (Exception ex)
         {
             Console.WriteLine("Error while adding item: " + ex.Message);
-            throw; // Re-throw the exception for handling in ViewModel
+            throw; 
         }
     }
 

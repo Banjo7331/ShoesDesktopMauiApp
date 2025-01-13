@@ -8,5 +8,5 @@ public interface IRatingService
 {
     Task CreateRatingAsync(Guid itemId, CreateRatingRequest request);
     Task RemoveRatingAsync(Guid itemId);
-    Task<GetRatingListResponse> GetRatingListAsync(Guid itemId);
+    Task<GetRatingListResponse> GetRatingListAsync(Guid itemId, int pageNumber, int pageSize);
 }

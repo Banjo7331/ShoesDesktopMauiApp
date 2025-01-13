@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-12T15:00:52.925</Modified>
+      <Modified>2025-01-13T21:56:11.480</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ShoesDesktopMauiApp.dll">
       <PackagePath>ShoesDesktopMauiApp.dll</PackagePath>
-      <Modified>2025-01-12T15:00:52.141</Modified>
+      <Modified>2025-01-13T21:56:10.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ShoesDesktopMauiApp.exe</PackagePath>
-      <Modified>2025-01-12T15:00:52.160</Modified>
+      <Modified>2025-01-13T21:56:10.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cylwi\RiderProjects\ShoesDesktopMauiApp\ShoesDesktopMauiApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

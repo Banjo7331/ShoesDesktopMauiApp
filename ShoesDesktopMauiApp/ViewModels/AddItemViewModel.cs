@@ -63,10 +63,8 @@ namespace ShoesDesktopMauiApp.ViewModels
             {
                 await _itemService.AddItemAsync(newItemRequest);
 
-                // Powrót do widoku listy
                 await Application.Current.MainPage.Navigation.PopAsync();
 
-                // Wywołanie LoadItemsCommand w ItemsViewModel
                 var itemsPage = Application.Current.MainPage.Navigation.NavigationStack
                     .OfType<ItemsPage>().FirstOrDefault();
                 if (itemsPage != null && itemsPage.BindingContext is ItemsViewModel itemsViewModel)
@@ -82,7 +80,6 @@ namespace ShoesDesktopMauiApp.ViewModels
 
         private async Task CancelAsync()
         {
-            // Wróć do poprzedniej strony bez dodawania
             await Application.Current.MainPage.Navigation.PopAsync();
         }
     }

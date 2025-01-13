@@ -16,7 +16,7 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="10">
                             <Label Text="{Binding Name}" FontSize="18" VerticalOptions="Center" />
-                            <Label Text="{Binding Description}" FontSize="14" TextColor="Gray" />
+                            <Label Text="{Binding AverageRating}" FontSize="14" TextColor="Gray" />
                             <Button
                                 Text="Delete"
                                 Command="{Binding Path=BindingContext.RemoveItemCommand, Source={x:Reference PageRoot}}"
@@ -29,7 +29,17 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button 
+                Text="Previous Page"
+                Command="{Binding LoadPreviousPageCommand}"
+                IsEnabled="{Binding IsPreviousPageAvailable}" />
+            <Button 
+                Text="Next Page"
+                Command="{Binding LoadNextPageCommand}"
+                IsEnabled="{Binding IsNextPageAvailable}" />
+        </StackLayout>
         <Button
             Text="Add New Item"
             Command="{Binding NavigateToAddItemCommand}"

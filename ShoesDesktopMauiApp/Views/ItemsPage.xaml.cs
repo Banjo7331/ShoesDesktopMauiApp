@@ -19,7 +19,6 @@ public partial class ItemsPage : ContentPage
             viewModel.NavigateToItemDetailsCommand.Execute(selectedItem);
         }
 
-        // Resetuj zaznaczenie elementu
         ((ListView)sender).SelectedItem = null;
     }
 }

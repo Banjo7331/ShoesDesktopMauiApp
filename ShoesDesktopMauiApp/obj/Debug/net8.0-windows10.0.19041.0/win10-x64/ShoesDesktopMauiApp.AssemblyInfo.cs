@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShoesDesktopMauiApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+041cbe5379491e26a50a306d2182ae2011bf734d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3226e76b14f3391bdc42d319831453ec48f3bf54")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShoesDesktopMauiApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShoesDesktopMauiApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

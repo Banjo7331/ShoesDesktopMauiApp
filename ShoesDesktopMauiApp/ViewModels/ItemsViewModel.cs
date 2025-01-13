@@ -20,10 +20,15 @@ namespace ShoesDesktopMauiApp.ViewModels
         private readonly IRatingService _ratingService;
         private readonly IServiceProvider _serviceProvider;
         private bool _isBusy;
+        private int _pageNumber = 1;
+        private const int PageSize = 7;
         public string CurrentUser { get; private set; }
         public ICommand NavigateToAddItemCommand { get; }
         public ICommand NavigateToItemDetailsCommand { get; }
-        public ObservableCollection<Item> Items { get; } = new ObservableCollection<Item>();
+        public ObservableCollection<Item> Items { get; set; } = new ObservableCollection<Item>();
+
+        public ICommand LoadNextPageCommand { get; }
+        public ICommand LoadPreviousPageCommand { get; }
 
         public ItemsViewModel(IItemService itemService,IRatingService ratingService,TokenService tokenService,IServiceProvider serviceProvider)
         {
@@ -37,15 +42,44 @@ namespace ShoesDesktopMauiApp.ViewModels
                 CurrentUser = tokenService.GetUsernameFromToken(token);
             }
             
-            LoadItemsCommand = new Command(async () => await LoadItemsAsync());
+            LoadItemsCommand = new Command(async () => await LoadPageAsync(1));
             AddItemCommand = new Command(async () => await AddItemAsync());
+            LoadNextPageCommand = new Command(async () => await LoadNextPageAsync());
+            LoadPreviousPageCommand = new Command(async () => await LoadPreviousPageAsync());
             RemoveItemCommand = new Command<Guid>(async (id) => await RemoveItemAsync(id));
             NavigateToItemDetailsCommand = new Command<Item>(async (selectedItem) => await NavigateToItemDetailsAsync(selectedItem));
             NavigateToAddItemCommand = new Command(async () => await NavigateToAddItemAsync());
 
-            // Automatyczne załadowanie danych przy inicjalizacji
-            _ = LoadItemsAsync();
+            _ = LoadPageAsync(1);
         }
+        private bool _isNextPageAvailable;
+        public bool IsNextPageAvailable
+        {
+            get => _isNextPageAvailable;
+            set
+            {
+                if (_isNextPageAvailable != value)
+                {
+                    _isNextPageAvailable = value;
+                    OnPropertyChanged(nameof(IsNextPageAvailable));
+                }
+            }
+        }
+
+        private bool _isPreviousPageAvailable;
+        public bool IsPreviousPageAvailable
+        {
+            get => _isPreviousPageAvailable;
+            set
+            {
+                if (_isPreviousPageAvailable != value)
+                {
+                    _isPreviousPageAvailable = value;
+                    OnPropertyChanged(nameof(IsPreviousPageAvailable));
+                }
+            }
+        }
+        
         private string _newItemName;
         public string NewItemName
         {
@@ -53,7 +87,7 @@ namespace ShoesDesktopMauiApp.ViewModels
             set
             {
                 _newItemName = value;
-                OnPropertyChanged(); // Powiadamia widok o zmianie
+                OnPropertyChanged(); 
             }
         }
 
@@ -81,30 +115,46 @@ namespace ShoesDesktopMauiApp.ViewModels
             }
         }
 
-        private async Task LoadItemsAsync()
+        public async Task LoadPageAsync(int pageNumber)
         {
-            if (IsBusy) return; // Prevent multiple loads
+            if (IsBusy) return;
 
             IsBusy = true;
-            Items.Clear();
 
             try
             {
-                var items = await _itemService.GetItemsAsync(); 
-                foreach (var item in items)
+                var response = await _itemService.GetItemsAsync(pageNumber, PageSize);
+                Items.Clear();
+
+                foreach (var item in response.Items)
                 {
-                    Items.Add(item); 
+                    Items.Add(item);
                 }
+
+                _pageNumber = pageNumber;
+                IsNextPageAvailable = response.HasNext;
+                IsPreviousPageAvailable = _pageNumber > 1;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error loading items: " + ex.Message);
+                Console.WriteLine("Error loading page: " + ex.Message);
                 await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
             }
             finally
             {
                 IsBusy = false;
             }
+        }
+
+        public async Task LoadNextPageAsync()
+        {
+            await LoadPageAsync(_pageNumber + 1);
+        }
+
+        public async Task LoadPreviousPageAsync()
+        {
+            if (_pageNumber > 1)
+                await LoadPageAsync(_pageNumber - 1);
         }
 
         private async Task AddItemAsync()
@@ -119,10 +169,8 @@ namespace ShoesDesktopMauiApp.ViewModels
 
                 await _itemService.AddItemAsync(request);
 
-                // Pokazanie komunikatu o sukcesie
                 await Application.Current.MainPage.DisplayAlert("Success", "Item added successfully!", "OK");
 
-                // Wyczyszczenie pól po dodaniu elementu
                 NewItemName = string.Empty;
                 NewItemDescription = string.Empty;
             }

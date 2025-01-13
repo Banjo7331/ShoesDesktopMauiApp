@@ -14,6 +14,8 @@ public class ItemDetailsViewModel : BindableObject
     private readonly IItemService _itemService;
     private readonly IRatingService _ratingService;
     private Guid _itemId;
+    private int _ratingPageNumber = 1;
+    private const int RatingPageSize = 10;
     public ObservableCollection<GetRatingListResponse.RatingItem> Ratings { get; } = new();
 
     private string _name;
@@ -103,8 +105,39 @@ public class ItemDetailsViewModel : BindableObject
             OnPropertyChanged();
         }
     }
+    
+    private bool _hasNextRatings;
+    public bool HasNextRatings
+    {
+        get => _hasNextRatings;
+        set
+        {
+            if (_hasNextRatings != value)
+            {
+                _hasNextRatings = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    private bool _hasPreviousRatings;
+    public bool HasPreviousRatings
+    {
+        get => _hasPreviousRatings;
+        set
+        {
+            if (_hasPreviousRatings != value)
+            {
+                _hasPreviousRatings = value;
+                OnPropertyChanged();
+            }
+        }
+    }
     public ICommand SubmitRatingCommand { get; }
     public ICommand RemoveRatingCommand { get; }
+    
+    public ICommand LoadNextRatingPageCommand { get; }
+    public ICommand LoadPreviousRatingPageCommand { get; }
     
 
     public ItemDetailsViewModel(IItemService itemService, IRatingService ratingService, TokenService tokenService)
@@ -116,13 +149,15 @@ public class ItemDetailsViewModel : BindableObject
 
         SubmitRatingCommand = new Command(async () => await SubmitRatingAsync());
         RemoveRatingCommand = new Command(async () => await RemoveRatingAsync());
+        LoadNextRatingPageCommand = new Command(async () => await LoadNextRatingPageAsync());
+        LoadPreviousRatingPageCommand = new Command(async () => await LoadPreviousRatingPageAsync());
     }
     
     public void Initialize(Guid itemId)
     {
         _itemId = itemId;
         _ = LoadItemDetailsAsync(itemId);
-        _ = LoadRatingsAsync();
+        _ = LoadRatingsPageAsync(1);
     }
 
     private async Task LoadItemDetailsAsync(Guid itemId)
@@ -143,19 +178,36 @@ public class ItemDetailsViewModel : BindableObject
             Console.WriteLine($"Error loading item details: {ex.Message}");
         }
     }
-    
-    private async Task LoadRatingsAsync()
+    private async Task LoadNextRatingPageAsync()
+    {
+        if (HasNextRatings)
+        {
+            await LoadRatingsPageAsync(_ratingPageNumber + 1);
+        }
+    }
+
+    private async Task LoadPreviousRatingPageAsync()
+    {
+        if (HasPreviousRatings)
+        {
+            await LoadRatingsPageAsync(_ratingPageNumber - 1);
+        }
+    }
+    private async Task LoadRatingsPageAsync(int pageNumber)
     {
         try
         {
-            var response = await _ratingService.GetRatingListAsync(_itemId);
+            var response = await _ratingService.GetRatingListAsync(_itemId, pageNumber, RatingPageSize);
             Ratings.Clear();
 
             foreach (var rating in response.Ratings)
             {
                 Ratings.Add(rating);
             }
-            HasUserRated = Ratings.Any(r => r.User == CurrentUser);
+
+            _ratingPageNumber = pageNumber;
+            HasNextRatings = response.HasNext;
+            HasPreviousRatings = response.HasPrevious;
         }
         catch (Exception ex)
         {
@@ -165,7 +217,7 @@ public class ItemDetailsViewModel : BindableObject
     
     private async Task SubmitRatingAsync()
     {
-        if (UserRating < 1 || UserRating > 10) // Zakres od 1 do 10
+        if (UserRating < 1 || UserRating > 10) 
         {
             await Application.Current.MainPage.DisplayAlert("Invalid Rating", "Please rate between 1 and 10.", "OK");
             return;
@@ -179,7 +231,7 @@ public class ItemDetailsViewModel : BindableObject
             await Application.Current.MainPage.DisplayAlert("Success", "Thank you for your rating!", "OK");
             
             _ = LoadItemDetailsAsync(_itemId);
-            _ = LoadRatingsAsync();
+            _ = LoadRatingsPageAsync(1);
         }
         catch (Exception ex)
         {
@@ -203,14 +255,21 @@ public class ItemDetailsViewModel : BindableObject
 
             HasUserRated = false;
             CanRate = true;
-            
+
             _ = LoadItemDetailsAsync(_itemId);
-            _ = LoadRatingsAsync();
+            _ = LoadRatingsPageAsync(1);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error removing rating: {ex.Message}");
-            await Application.Current.MainPage.DisplayAlert("Error", "An error occurred while removing your rating.", "OK");
+            if (ex.Message.Contains("You cannot remove the rating"))
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+            }
+            else
+            {
+                Console.WriteLine($"Error removing rating: {ex.Message}");
+                await Application.Current.MainPage.DisplayAlert("Error", "An error occurred while removing your rating.", "OK");
+            }
         }
     }
     

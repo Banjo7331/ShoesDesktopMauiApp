@@ -10,7 +10,6 @@ public class DynamicAuthorizationHandler : DelegatingHandler
 {
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
-        // Pobierz dynamicznie token z SecureStorage (lub innego miejsca)
         var token = await SecureStorage.GetAsync("auth_token");
 
         if (!string.IsNullOrEmpty(token))
